@@ -230,8 +230,9 @@ def homework7_4c():
     assert(v.verify(q1))
     assert(not v.verify(q2))
 
+
 def homework7_4e():
-    UD = (1, 2, 3)
+    UD = (1, 2, 3, 4)
     interpretation = {
     'G':([1,2], [2,3], [3,1])
     }
@@ -249,5 +250,7 @@ homework7_1d()
 homework7_4a()
 homework7_4b()
 homework7_4c()
+
 homework7_4e()
+
 print('All tests passed!')
