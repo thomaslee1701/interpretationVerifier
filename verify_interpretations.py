@@ -105,7 +105,7 @@ class Verify:
         elif self.isConditional(query):
             pattern = "^\((.*)\)>\((.*)\)$"
             groups = re.search(pattern, query).groups()
-            return (not self.verify(groups[0])) or ((self.verify(groups[0]) and self.verify(groups[1])))
+            return not self.verify(groups[0]) or  self.verify(groups[1])
         elif self.isNot(query):
             rest = query[2:-1]
             return not self.verify(rest)
